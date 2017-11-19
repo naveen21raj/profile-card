@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster|Roboto");
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.heart {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  transition: all 1s ease;
+}
+
+.heart:before {
+  font-family: FontAwesome;
+  content: "\f08a";
+  font-size: 28px;
+  color: #1bb76e;
+}
+
+.heart.active:after {
+  font-family: FontAwesome;
+  content: "\f004";
+  font-size: 28px;
+  color: #1bb76e;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 30px;
+  text-align: center;
+  color: #eef1f4;
+}
+
+.content p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.content span {
+  font-family: "Lobster", cursive;
+  font-size: 24px;
+  color: #1bb76e;
+  letter-spacing: 2px;
+}
+
+.social {
+  position: absolute;
+  bottom: 20px;
+  left: 70px;
+  transition: all 1s ease;
+  opacity: 0;
+}
+
+.social.close {
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  margin: 0 5px;
+  border-radius: 50%;
+  line-height: 55px;
+  text-align: center;
+}
+
+ul li .fa {
+  font-size: 20px;
+  color: #1bb76e;
+}
+
+.share-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #1bb76e;
+  line-height: 55px;
+  text-align: center;
+}
+
+.share-btn .fa {
+  font-size: 20px;
+  color: #fff;
+}
+
+.social
+{
+  position: absolute;
+  bottom: 20px;
+  left: 70px;
+  transition: all 1s ease;
+  opacity: 0; 
+}
+ul
+{
+  list-style: none;
+
+}
+ul li
+{
+  width: 50px;
+  height: 50px;
+  float: left;
+  background: #fff;
+  margin:0 5px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 55px;
+}
+ul li .fa
+{
+  font-size: 20px;
+  color:  #1bb76e;
+}
+ul li:before
+{
+  content:attr(data-tooltip);
+  width: 120px;
+  height: 45px;
+  background: #fff;
+  color: #000;
+  position:absolute;
+  top:-70px;
+  left:-25px;
+  border-radius: 5px;
+  line-height: 45px ;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  opacity: 0;
+  transition: all 0.5s ease; 
+}
+ul li:after
+{
+color: "";
+position: absolute;
+top: -26px;
+left: 18px;
+border-left: 15px solid transparent;
+border-right: 15px solid transparent;
+border-top: : 15px solid #fff;
+border-bottom: : 15px solid transparent;
+opacity: 0;
+transition: all 0.5s ease; 
+}
+ul li:hover:before,
+ul li:hover:after
+{
+  opacity: 1;
+  transition: all 0.5s ease; 
+}
+.heart.active:after{
+  font-family: fontawesome;
+  content: "\f004";
+  font-size: 28px;
+  color:  #1bb76e;
+  position: absolute;
+  top: 0;
+  left: 0; 
+}
+.social.close{
+  opacity: 1;
+  transition: all 1s ease;
+}
+}

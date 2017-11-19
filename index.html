@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <title> profile</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="style.css">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    $(".heart").click(function(){
+  $(this).toggleClass("active");
+});
+
+$(".share-btn").click(function(){
+   $(".social").toggleClass("close");
+}); });
+  </script>
+ </head>
+ <body>
+
+
+<div class="wrapper">
+  <div class="img-container">
+    <img src="mm.png" alt="">
+
+    <div class="heart">
+    </div>
+
+    <div class="content">
+      <p>The Eiffel Tower is a wrought iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower.</p>
+      <span>- Eiffel Tower</span>
+    </div>
+
+    <div class="share-btn">
+      <i class="fa fa-share" aria-hidden="true"></i>
+    </div>
+
+   
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+    <div class="social">
+      <ul>
+        <li data-tooltip="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+        <li data-tooltip="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+        <li data-tooltip="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
